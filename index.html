@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Kainos Coding Workshop</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="popcorn.png">
+  </head>
+
+  <body>
+    <div class="myDiv" class="p2">
+      <h1>Movie Recommendation</h1>
+      <h2>Use the button below to get a new recommendation</h2>
+      <img id="poster" width="350" height="500" />
+      <button class="centrebutton" class="p3" onclick="newMovie()">
+        Click For A New Movie
+      </button>
+      <p class="p3" id="title">Title:</p>
+      <p class="p3" id="description">Movie Description:</p>
+      <p class="p3" id="genres">Genres:</p>
+      <button class="p3" id="like" onclick="like()">Like</button>
+      <button class="p3" id="dislike" onclick="dislike()">Dislike</button>
+      <table id="table">
+        <tr>
+          <th>Movie Title</td>
+        </tr>
+      </table>
+      <button  class="recommended" onclick="recommended()">Get a movie recommendation</button>
+      <h4 id="Recommendations"></p>
+      <script src="script.js"></script>
+      <script src="jquery-csv.js"></script>
+    </div>
+  </body>
+</html>
